@@ -150,6 +150,16 @@ function callback (event) {
 contactBody[0].textContent = "742 Evergreen Terrace"
 contactBody[1].textContent = "1 (888) 888-8888"
 contactBody[2].textContent = "Springfield, Quahog RI"
+ctaTxt.textContent = "DOM Is not fun"
+ctaButton.textContent = "Run While You Can"
+navBar[0].textContent = "All"
+navBar[1].textContent = "Your"
+navBar[2].textContent = "Base"
+navBar[3].textContent = "Are"
+navBar[4].textContent = "Belong"
+navBar[5].textContent = "To"
+newNavItem2.textContent = "Us"
+newNavItem1.textContent = "Ha. Ha. Ha."
 }
 
 
