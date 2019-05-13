@@ -40,3 +40,70 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+//logo.setAttribute("src", "img/logo.png")
+logo.src = "img/logo.png"
+
+const navBar = document.querySelectorAll(".container header nav a")
+navBar[0].textContent = "Services"
+navBar[1].textContent = "Product"
+navBar[2].textContent = "Vision"
+navBar[3].textContent = "Features"
+navBar[4].textContent = "About"
+navBar[5].textContent = "Contact"
+
+const ctaTxt = document.querySelector(".cta-text h1")
+ctaTxt.textContent = "DOM Is Awesome"
+
+// Failed attempt to get line breaks via two text boxes, one parent, one chil
+
+// const ctaTxt1 = document.querySelector(".cta .cta-text h1")
+// ctaTxt.textContent = "DOM"
+// const ctaTxt2 = document.querySelector(".cta .cta-text h1")
+// ctaTxt1.appendChild(ctaTxt2)
+// ctaTxt.textContent = "Is Awesome"
+
+
+const ctaButton = document.querySelector(".cta-text button")
+ctaButton.textContent = "Get Started"
+
+
+const ctaImg = document.querySelector("#cta-img")
+ctaImg.src = "img/header-img.png"
+ctaImg.alt = "Image of a code snippet."
+
+const txtContentHeader = document.querySelectorAll(".top-content .text-content h4")
+const txtContent = document.querySelectorAll(".top-content .text-content p")
+
+txtContentHeader[0].textContent = "Features"
+txtContent[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+txtContentHeader[1].textContent = "About"
+txtContent[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+const midImg = document.querySelector(".middle-img")
+midImg.src = "img/mid-page-accent.jpg"
+midImg.alt = "Image of code snippets across the screen"
+
+const bottomContentHeader = document.querySelectorAll(".bottom-content .text-content h4")
+const bottomContent = document.querySelectorAll(".bottom-content .text-content p")
+
+bottomContentHeader[0].textContent = "Services"
+bottomContent[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+bottomContentHeader[1].textContent = "Services"
+bottomContent[1].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+bottomContentHeader[2].textContent = "Vision"
+bottomContent[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+const contactHead = document.querySelector(".contact h4")
+const contactBody = document.querySelectorAll(".contact p")
+
+contactHead.textContent = "Contact"
+contactBody[0].textContent = "123 Way 456 Street Somewhere, USA"
+contactBody[1].textContent = "1 (888) 888-8888"
+contactBody[2].textContent = "sales@greatidea.io"
+
+
+
+
