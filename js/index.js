@@ -53,21 +53,26 @@ navBar[5].textContent = "Contact"
 const header = document.querySelector("header")
 
 header.style.backgroundColor = "green"
-const newNavItem1 = document.createElement("link")
-const newNavItem2 = document.createElement("link")
-
+const newNavItem1 = document.createElement("a")
+const newNavItem2 = document.createElement("a")
+newNavItem1.href = "#"
+newNavItem2.href = "#"
 newNavItem1.textContent = "Home Page"
 newNavItem2.textContent = "DMCA Contact"
 
-// var parent = document.createElement("div");
-// var p = document.createElement("p");
-// parent.prepend("Some text", p);
+const entireNav = document.querySelector(".container header nav")
+entireNav.prepend(newNavItem1)
+entireNav.append(newNavItem2)
 
-//Failures
-//navBar.prepend("Home Page", newNavItem1)
-// navBar.prepend(newNavItem1)
-// navBar.append(newNavItem2)
-//document.querySelector("navBar").prependChild.newNavItem1
+
+//navBar[0].prepend(newNavItem1)
+
+//Failured syntax attempts
+
+//navBar[0].prependChild(newNavItem1)
+//navBar[0].prepend(newNavItem1)
+//navBar[5].append(newNavItem2)
+//document.querySelector("navBar[0]").prependChild.newNavItem1
 //header.appendChild(newNavItem2)
 
 const ctaTxt = document.querySelector(".cta-text h1")
