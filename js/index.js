@@ -146,6 +146,10 @@ function callback (event) {
   bottomContent[0].style.backgroundColor = "yellow";
   bottomContent[1].style.backgroundColor = "white";
   bottomContent[2].style.backgroundColor = "green"
+  contactHead.textContent = "WEEE! This is fun"
+contactBody[0].textContent = "742 Evergreen Terrace"
+contactBody[1].textContent = "1 (888) 888-8888"
+contactBody[2].textContent = "Springfield, Quahog RI"
 }
 
 
