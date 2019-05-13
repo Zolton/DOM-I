@@ -64,9 +64,6 @@ const entireNav = document.querySelector(".container header nav")
 entireNav.prepend(newNavItem1)
 entireNav.append(newNavItem2)
 
-
-//navBar[0].prepend(newNavItem1)
-
 //Failured syntax attempts
 
 //navBar[0].prependChild(newNavItem1)
@@ -128,6 +125,28 @@ contactBody[0].textContent = "123 Way 456 Street Somewhere, USA"
 contactBody[1].textContent = "1 (888) 888-8888"
 contactBody[2].textContent = "sales@greatidea.io"
 
+
+
+
+// Stretch goal
+bottomContent[1].style.backgroundColor = "red"
+bottomContentHeader[0].style.fontSize = "2 rem"
+
+const buttonStretch = document.createElement("button")
+buttonStretch.href = "#"
+buttonStretch.textContent = "Click me!!"
+contactHead.append(buttonStretch)
+linebreak = document.createElement("br")
+buttonStretch.prepend(linebreak)
+
+buttonStretch.addEventListener("click", callback)
+
+function callback (event) {
+  event.target.style.backgroundColor = 'blue';
+  bottomContent[0].style.backgroundColor = "yellow";
+  bottomContent[1].style.backgroundColor = "white";
+  bottomContent[2].style.backgroundColor = "green"
+}
 
 
 
