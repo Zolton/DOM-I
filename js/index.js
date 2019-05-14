@@ -41,17 +41,46 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 //logo.setAttribute("src", "img/logo.png")
-logo.src = "img/logo.png"
+
+
+//const navBar = document.querySelectorAll(".container header nav a")
 
 const navBar = document.querySelectorAll(".container header nav a")
-navBar[0].textContent = "Services"
-navBar[1].textContent = "Product"
-navBar[2].textContent = "Vision"
-navBar[3].textContent = "Features"
-navBar[4].textContent = "About"
-navBar[5].textContent = "Contact"
-const header = document.querySelector("header")
 
+
+//navBar.setAttribute("a", siteContent["nav"])
+
+// navBar.forEach(link => { 
+
+//   //link.textContent = 
+//   console.log(siteContent["nav"][1])
+ 
+// })
+console.log(navBar)
+//console.log(siteContent.nav[`nav-item-${1}`])
+
+// navBar.forEach(test)
+
+// function test (te) {
+
+// }
+
+//   for (let i=0; i < siteContent.nav[`nav-item-${i}`]; i++) {
+//     navBar[i].textContent = siteContent.nav[`nav-item-${i+1}`]
+// }
+
+//   navBar[i].textContent = siteContent["nav"][`nav-item-${i}`]
+//   navBar[i].textContent = siteContent.nav["nav-item-][i]
+  
+
+navBar[0].textContent = siteContent.nav["nav-item-1"]
+navBar[1].textContent = siteContent.nav["nav-item-2"]
+navBar[2].textContent = siteContent.nav["nav-item-3"]
+navBar[3].textContent = siteContent.nav["nav-item-4"]
+navBar[4].textContent = siteContent.nav["nav-item-5"]
+navBar[5].textContent = siteContent.nav["nav-item-6"]
+
+const header = document.querySelector("header")
 header.style.backgroundColor = "green"
 const newNavItem1 = document.createElement("a")
 const newNavItem2 = document.createElement("a")
@@ -73,7 +102,7 @@ entireNav.append(newNavItem2)
 //header.appendChild(newNavItem2)
 
 const ctaTxt = document.querySelector(".cta-text h1")
-ctaTxt.textContent = "DOM Is Awesome"
+ctaTxt.textContent = siteContent.cta.h1
 
 // Failed attempt to get line breaks via two text boxes, one parent, one chil
 
@@ -85,45 +114,47 @@ ctaTxt.textContent = "DOM Is Awesome"
 
 
 const ctaButton = document.querySelector(".cta-text button")
-ctaButton.textContent = "Get Started"
+ctaButton.textContent = siteContent.cta.button
 
 
 const ctaImg = document.querySelector("#cta-img")
-ctaImg.src = "img/header-img.png"
+ctaImg.src = siteContent.cta["img-src"]
 ctaImg.alt = "Image of a code snippet."
 
 const txtContentHeader = document.querySelectorAll(".top-content .text-content h4")
 const txtContent = document.querySelectorAll(".top-content .text-content p")
 
-txtContentHeader[0].textContent = "Features"
-txtContent[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+//txtContentHeader[0].textContent = "Features"
+//txtContentHeader[0].setAttribute(h4, ["main-content"]["features-h4"])
+txtContent[0].textContent = siteContent["main-content"]["features-content"]
+txtContentHeader[0].textContent = siteContent["main-content"]["features-h4"]
 
-txtContentHeader[1].textContent = "About"
-txtContent[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+txtContentHeader[1].textContent = siteContent["main-content"]["about-h4"]
+txtContent[1].textContent = siteContent["main-content"]["about-content"]
 
 const midImg = document.querySelector(".middle-img")
-midImg.src = "img/mid-page-accent.jpg"
+midImg.src = siteContent["main-content"]["middle-img-src"]
 midImg.alt = "Image of code snippets across the screen"
 
 const bottomContentHeader = document.querySelectorAll(".bottom-content .text-content h4")
 const bottomContent = document.querySelectorAll(".bottom-content .text-content p")
 
-bottomContentHeader[0].textContent = "Services"
-bottomContent[0].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+bottomContentHeader[0].textContent = siteContent["main-content"]["services-h4"]
+bottomContent[0].textContent = siteContent["main-content"]["services-content"]
 
-bottomContentHeader[1].textContent = "Services"
-bottomContent[1].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+bottomContentHeader[1].textContent = siteContent["main-content"]["product-h4"]
+bottomContent[1].textContent = siteContent["main-content"]["product-content"]
 
-bottomContentHeader[2].textContent = "Vision"
-bottomContent[2].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+bottomContentHeader[2].textContent = siteContent["main-content"]["vision-h4"]
+bottomContent[2].textContent = siteContent["main-content"]["vision-content"]
 
 const contactHead = document.querySelector(".contact h4")
 const contactBody = document.querySelectorAll(".contact p")
 
-contactHead.textContent = "Contact"
-contactBody[0].textContent = "123 Way 456 Street Somewhere, USA"
-contactBody[1].textContent = "1 (888) 888-8888"
-contactBody[2].textContent = "sales@greatidea.io"
+contactHead.textContent = siteContent.contact["contact-h4"]
+contactBody[0].textContent = siteContent.contact.address
+contactBody[1].textContent = siteContent.contact.phone
+contactBody[2].textContent = siteContent.contact.email
 
 
 
